@@ -6,6 +6,13 @@ Implement Sign Google redirect(working for incognito mode).
 
 ### Import the package
 
+```yaml
+dependencies:
+  google_sign_in_web_redirect:
+    git: https://github.com/kunkaamd/google_sign_in_web_redirect
+```
+
+
 ```dart
 import 'package:google_sign_in_web_redirect/google_sign_in_web_redirect.dart';
 ```
