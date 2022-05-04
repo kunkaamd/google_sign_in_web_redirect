@@ -82,9 +82,11 @@ packages:
   google_sign_in_web_redirect:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: "60da352ea64328e30b6b4116be435bc3dabd693a"
+      url: "https://github.com/kunkaamd/google_sign_in_web_redirect"
+    source: git
     version: "0.0.1"
   http:
     dependency: transitive

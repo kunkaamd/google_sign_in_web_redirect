@@ -35,7 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_sign_in_web_redirect:
-    path: ../
+    git: https://github.com/kunkaamd/google_sign_in_web_redirect
   url_strategy: ^0.2.0
 
 dev_dependencies:

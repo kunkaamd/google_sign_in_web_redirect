@@ -77,16 +77,18 @@ class GoogleSignWeb {
   }
 
   static void getQueryParameters() {
-    if (Uri.base.hasFragment) {
-      _signInGoogleQueryParameters = SignInGoogleQueryParameters(
-        idToken: Uri.parse(Uri.base.path + "?" + Uri.base.fragment)
-            .queryParameters['id_token'],
-      );
-    } else if (Uri.base.queryParameters['code'] != null &&
-        Uri.base.queryParameters['scope'] != null) {
-      _signInGoogleQueryParameters = SignInGoogleQueryParameters(
-        code: Uri.base.queryParameters['code'],
-      );
+    if (kIsWeb) {
+      if (Uri.base.hasFragment) {
+        _signInGoogleQueryParameters = SignInGoogleQueryParameters(
+          idToken: Uri.parse(Uri.base.path + "?" + Uri.base.fragment)
+              .queryParameters['id_token'],
+        );
+      } else if (Uri.base.queryParameters['code'] != null &&
+          Uri.base.queryParameters['scope'] != null) {
+        _signInGoogleQueryParameters = SignInGoogleQueryParameters(
+          code: Uri.base.queryParameters['code'],
+        );
+      }
     }
   }
 

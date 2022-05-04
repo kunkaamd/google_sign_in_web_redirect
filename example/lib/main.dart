@@ -8,7 +8,7 @@ import 'package:http/http.dart' as http;
 
 void main() {
   GoogleSignWeb.getQueryParameters();///make sure add this line
-  setPathUrlStrategy();
+  setPathUrlStrategy();///make sure add this line
   runApp(const MyApp());
 }
 
