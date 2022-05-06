@@ -1,6 +1,6 @@
 # google\_sign\_in\_web\_redirect
 
-Implement Sign Google redirect(working for incognito mode).
+Flutter package implements Sign Google redirect(working for incognito mode).
 
 ## Usage
 
