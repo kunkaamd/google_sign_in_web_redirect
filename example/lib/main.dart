@@ -88,7 +88,7 @@ class _LoginScreenState extends State<LoginScreen> {
       GoogleSignWeb.init(
         ///id_token if you only want get user_id
         ///code if you need basic profile, access_token
-        responseType: "code",
+        responseType: "id_token",
         scopes: ['email', 'profile'],
       );
       if(GoogleSignWeb.instance?.queryParameters?.idToken != null) {
@@ -113,8 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
         ///
         /// GoogleSignWeb.instance.token = "YOUR_ID_TOKEN_RESPONSE_FROM_SERVER";
         /// GoogleSignWeb.instance.verifyToken();
-
-        try {
+        /* try {
           final response = await http.post(Uri.parse("https://six-colts-rhyme-116-110-109-131.loca.lt/auth/idToken"),body: {
             "code":  GoogleSignWeb.instance!.queryParameters!.code,
           },headers: {
@@ -127,7 +126,7 @@ class _LoginScreenState extends State<LoginScreen> {
           Navigator.pushNamed(context, '/main',arguments: jwt.name);
         } catch (_) {
           print(_.toString());
-        }
+        } */
       }
     }
   }
