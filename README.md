@@ -2,21 +2,6 @@
 
 Flutter package implements Sign Google redirect(working for incognito mode).
 
-## Usage
-
-### Import the package
-
-```yaml
-dependencies:
-  google_sign_in_web_redirect:
-    git: https://github.com/kunkaamd/google_sign_in_web_redirect
-```
-
-
-```dart
-import 'package:google_sign_in_web_redirect/google_sign_in_web_redirect.dart';
-```
-
 ### Integration
 
 First, go through the instructions [here](https://developers.google.com/identity/sign-in/web/sign-in#before_you_begin) to create your Google Sign-In OAuth client ID.
@@ -54,7 +39,7 @@ flutter run -d chrome --web-hostname localhost --web-port 7357
 Read the rest of the instructions if you need to add extra APIs (like Google People API).
 
 
-### Using the plugin
+### Usage
 Add the following import to your Dart code:
 
 ```dart

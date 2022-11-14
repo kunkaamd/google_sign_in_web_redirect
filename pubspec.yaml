@@ -1,11 +1,13 @@
 name: google_sign_in_web_redirect
-description: A new Flutter package project.
+description: A package helps you login with google by redirect
 version: 0.0.1
-homepage:
+homepage: https://github.com/kunkaamd/google_sign_in_web_redirect
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
   flutter: ">=1.17.0"
+
+repository: https://github.com/kunkaamd/google_sign_in_web_redirect
 
 dependencies:
   flutter:
