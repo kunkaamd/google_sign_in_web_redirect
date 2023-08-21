@@ -12,7 +12,7 @@ repository: https://github.com/kunkaamd/google_sign_in_web_redirect
 dependencies:
   flutter:
     sdk: flutter
-  http: ^0.13.4
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:
